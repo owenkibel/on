@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rm -rf .git && git init
+
+git add .
+git commit -m "updated `date +'%Y-%m-%d %H:%M:%S'`";
+git branch -M main
+git remote add origin https://github.com/owenkibel/on.git
+git push -f -u origin main
+
+
